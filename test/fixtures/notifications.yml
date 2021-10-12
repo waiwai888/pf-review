@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  visiter_id: 1
+  visited_id: 1
+  comment_id: 1
+  checked: false
+  post_id: 1
+  chat_id: 1
+  room_id: 1
+
+two:
+  visiter_id: 1
+  visited_id: 1
+  comment_id: 1
+  checked: false
+  post_id: 1
+  chat_id: 1
+  room_id: 1
