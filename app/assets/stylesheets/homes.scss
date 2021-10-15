@@ -1,3 +1,44 @@
 // Place all the styles related to the homes controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+.slider-box {
+  width: 100%;
+}
+
+.top-img {
+  position: absolute;
+  top: 0px;
+  height: 100vh;
+  width: 100%;
+  object-fit: cover; //余白が出ないよう縦横比を維持して調節
+}
+
+// .bx-wrapper{
+//   border:none!important;
+//   box-shadow: none!important;
+// }
+
+.bx-viewport .bxslider li{
+  height: 80vh;
+  display: block!important;
+  position: relative;
+  display: none;
+}
+
+.mv-head {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    z-index: 8888;
+    background-color: rgba(255, 255, 255, .5);
+    padding: 1rem 3rem !important;
+    margin: 0 !important;
+    border-radius: 3rem;
+}
+
+#mv {
+    position: relative;
+}

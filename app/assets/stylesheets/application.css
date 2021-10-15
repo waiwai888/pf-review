@@ -13,4 +13,17 @@
  *= require_tree .
  *= require_self
  */
- @import "bootstrap";
+ 
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP&family=Raleway&display=swap');
+ 
+@import "bootstrap";
+@import 'font-awesome-sprockets';
+@import 'font-awesome';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Raleway', 'Noto Sans JP', sans-serif;
+    list-style: none;
+}

@@ -16,6 +16,23 @@
 //= require bootstrap-sprockets
 
 //= require rails-ujs
+//= require bxslider
 //= require activestorage
 //= require turbolinks
 //= require_tree .
+/*global $*/
+
+//[top]bx-slider
+$(document).on('turbolinks:load', function(){
+  $('.bxslider').bxSlider({
+    auto: true,
+    speed: 1000,
+    moveSlides: 1,
+    pause: 2000,
+    maxSlides: 1,
+    randomStar: true,
+    responsive: true,
+    wrapperClass: 'bx-wrapper',
+    autoHover: true
+  });
+});

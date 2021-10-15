@@ -1,7 +1,27 @@
-<h1>Campist</h1>
+<section id="mv">
+  <div class="slider_box" style="position: relative;">
+    <div class="mv-head">
+      <h1 class="mv-pagename">Campist</h1>
+      <!--ゲストログインリンク設置-->
+      <p class="mv-title">
+        <%= link_to "ログイン", new_user_session_path, class: "btn btn-success rounded-pill" %>
+      </p>
+    </div>
+    <div class="bxslider">
+      <% @posts.each do |post| %>
+        <li><%= attachment_image_tag(post, :image, class: "top-img") %></li>
+      <% end %>
+    </div>
+  </div>
+</section>
 
-<%= render 'homes/about' %>
+<section id="about">
+  <%= render 'homes/about' %>  
+</section>
+<section id="feature">
+  <%= render 'homes/feature' %>
+</section>
+<section id="contact">
+  <%= render 'homes/contact' %>  
+</section>
 
-<%= render 'homes/feature' %>
-
-<%= render 'homes/contact' %>
