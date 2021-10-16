@@ -1,0 +1,36 @@
+<header>
+  <nav class="navbar navbar-expand-lg">
+    <div class="container-fluid">
+      <!--ハンバーガーメニュー-->
+      <a class="navbar-brand" href="/"><%= image_tag 'logo.png', class: "logo" %></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdpwn" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <!--ヘッダーメニュー-->
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav ml-auto mr-3">
+          <% if user_signed_in? %>
+            <li>投稿する</li>
+            <li>フォロー投稿一覧</li>
+            <li>全投稿一覧</li>
+            <li>キャンプサイト</li>
+            <li>通知</li>
+            <li>マイページ</li>
+            <li>ログアウト</li>
+          <% else %>
+            <li>Campistについて</li>
+            <li>どんなサービス？</li>
+            <li>お問い合わせ</li>
+            <li>新規登録</li>
+            <li>ログイン</li>
+          <% end %>
+        </ul>
+        <ul class="navbar-nav">
+          <% if user_signed_in? %>
+            <!--検索部分テンプレートへ-->
+           <% end %>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</header>
