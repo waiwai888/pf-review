@@ -25,15 +25,15 @@
 //[top]bx-slider
 $(document).on('turbolinks:load', function(){
   $('.bxslider').bxSlider({
-    auto: true,
-    speed: 1000,
-    moveSlides: 1,
-    pause: 2000,
-    maxSlides: 1,
-    randomStar: true,
-    responsive: true,
-    wrapperClass: 'bx-wrapper',
-    autoHover: true
+    auto: true,           // 自動スライド
+    speed: 1000,          // スライドするスピード
+    moveSlides: 1,        // 移動するスライド数
+    pause: 3000,          // 自動スライドの待ち時間
+    maxSlides: 1,         // 一度に表示させる最大数
+    randomStart: true,    // 最初に表示するスライドをランダムに設定
+    responsive: true,     //レスポンシブ対応
+    wrapperClass: 'bx-wrapper',//bx-weapperにクラス付与
+    autoHover: true       // ホバー時に自動スライドを停止
   });
 });
 
