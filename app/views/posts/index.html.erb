@@ -1,0 +1,9 @@
+<div class="container-fluid">
+  <div class="row">
+    <%= render 'layputs/tag_list', tag_list: @tag_list %>
+  </div>
+  <h2>全ユーザーの投稿</h2>
+  <div class="row feeds-index">
+    <%= render 'posts/feed', posts: @posts %>
+  </div>
+</div>

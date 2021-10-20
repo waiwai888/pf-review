@@ -1,0 +1,34 @@
+<% posts.each do |post| %>
+  <div class="col-md-6">
+    <div class="bg-white">
+      <!--投稿画像-->
+      <div class="image-container">
+        <%= link_to post_path(post) do %>
+          <%= attachment_image_tag(post, :image, format: 'jpg', class: "d-block mx-auto") %>
+        <% end %>
+      </div>
+      <div class="post-user-profile">
+        <!--ユーザーアイコン-->
+        <div class="user-image">
+          <%= link_to user_path(post.user) do %>
+            <%= attachment_image_tag(post.user, :profile_image, :fill,65,65, fallback: "no_image.png", size: "65x65", class: "rounded-circle d-block mx-auto img-fluid") %>
+          <% end %>
+        </div>
+        <!--ニックネーム・アカウント名-->
+        <div class="user-name">
+          <p><strong><%= link_to post.user.nickname, user_path(post.user) %></strong></p>
+          <p><%= link_to post.user.account_name, user_path(post.user) %></p>
+        </div>
+        <!--いいね/フォローボタン-->
+        <div class="favorite-follow">
+          <div id="favorite-btn_<%= post.id %>">
+            
+          </div>
+          <div id="follow-btn_<%= post.user.id %">
+            
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+<% end %>

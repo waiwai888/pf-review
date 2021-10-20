@@ -31,9 +31,9 @@
               <% end %>
             </li>
             <!--通知-->
-            <% if unchecked_notifications.any? %>
-              <i class="fas fa-circle notification-icon" ></i>
-            <% end %>
+            <%# if unchecked_notifications.any? %>
+              <!--<i class="fas fa-circle notification-icon" ></i>-->
+            <%# end %>
             <li>
               <%= link_to user_notifications_path(current_user), class: 'btn-default nav-link' do %>
                 <i class="fas fa-bell"></i>
